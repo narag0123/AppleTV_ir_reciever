@@ -1,0 +1,36 @@
+Command: /Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-540 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader.elf -m '/Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbserial-540 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400826c7: lock_acquire_generic at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/locks.c:145
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400826c7: lock_acquire_generic at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/locks.c:145
+--- 0x40082805: _lock_acquire_recursive at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/locks.c:174
+--- 0x4008287e: __retarget_lock_acquire_recursive at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/locks.c:333
+--- 0x400d9d4f: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x400d938d: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x4008b2b3: esp_log_va at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/log/src/log.c:57
+---  (inlined by) esp_log at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/log/src/log.c:120
+--- 0x400d6671: decode_ir_data at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:18 (discriminator 1)
+--- 0x400d6779: ir_rx_callback at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:60
+--- 0x400840f5: rmt_isr_handle_rx_done at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_driver_rmt/src/rmt_rx.c:662
+--- 0x40084124: rmt_rx_default_isr at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_driver_rmt/src/rmt_rx.c:754
+--- 0x400822d5: shared_intr_isr at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_hw_support/intr_alloc.c:471
+--- 0x40082c85: _xt_lowint1 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40084233: xt_utils_wait_for_intr at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x400d223b: esp_vApplicationIdleHook at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x40086c8e: prvIdleTask at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4350 (discriminator 1)
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

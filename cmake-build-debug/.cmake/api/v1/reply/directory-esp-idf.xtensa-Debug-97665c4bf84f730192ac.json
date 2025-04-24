@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/xtensa",
+		"source" : "/Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa"
+	}
+}

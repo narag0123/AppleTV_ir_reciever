@@ -1,0 +1,336 @@
+Command: /Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-540 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever 2.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader 2.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader.elf -m '/Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3234-gdc678decf7-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 24 2025 19:23:09[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ac70h ( 44144) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ac98 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001acbc vaddr=3ffb0000 size=02324h (  8996) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001cfe8 vaddr=40080000 size=03030h ( 12336) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15b30h ( 88880) map[0m
+[0;32mI (155) esp_image: segment 5: paddr=00035b58 vaddr=40083030 size=0a26ch ( 41580) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (197) app_init: Project name:     ir_reciever[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Apr 24 2025 19:22:02[0m
+[0;32mI (209) app_init: ELF file SHA256:  abfd3985c...[0m
+[0;32mI (213) app_init: ESP-IDF:          v5.5-dev-3234-gdc678decf7-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFB2E20 len 0002D1E0 (180 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 4008D29C len 00012D64 (75 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (293) IR_RECEIVER: Initializing IR receiver...[0m
+[0;32mI (293) IR_RECEIVER: IR Receiver started on GPIO 32[0m
+[0;32mI (293) main_task: Returned from app_main()[0m
+[0;32mI (1673) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (1743) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (1743) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (1743) IR_RECEIVER: Mute button received[0m
+[0;32mI (1743) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (1783) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (1793) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (1883) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (1903) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (1993) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (2003) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (2093) IR_RECEIVER: Mute button released[0m
+[0;32mI (2093) IR_RECEIVER: Press time:   1479 ms[0m
+[0;32mI (2093) IR_RECEIVER: Release time: 1829 ms[0m
+[0;32mI (2093) IR_RECEIVER: Held duration: 349 ms[0m
+[0;32mI (2103) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (2113) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (2213) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (2223) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (2323) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (2333) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (2423) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (2443) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (4813) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (4883) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (4883) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (4883) IR_RECEIVER: Mute button received[0m
+[0;32mI (4883) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (4913) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (4933) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5023) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5033) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5133) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5143) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5193) IR_RECEIVER: Mute button released[0m
+[0;32mI (5193) IR_RECEIVER: Press time:   4619 ms[0m
+[0;32mI (5193) IR_RECEIVER: Release time: 4929 ms[0m
+[0;32mI (5193) IR_RECEIVER: Held duration: 309 ms[0m
+[0;32mI (5243) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5253) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5353) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5363) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5453) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5473) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5563) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5573) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5673) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5683) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (5783) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (5793) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6183) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6253) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (6253) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (6253) IR_RECEIVER: Mute button received[0m
+[0;32mI (6253) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (6293) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6303) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6593) IR_RECEIVER: Mute button released[0m
+[0;32mI (6593) IR_RECEIVER: Press time:   5989 ms[0m
+[0;32mI (6593) IR_RECEIVER: Release time: 6329 ms[0m
+[0;32mI (6593) IR_RECEIVER: Held duration: 339 ms[0m
+[0;32mI (7763) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7833) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (7833) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (7833) IR_RECEIVER: Mute button received[0m
+[0;32mI (7833) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (7863) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7883) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (8193) IR_RECEIVER: Mute button released[0m
+[0;32mI (8193) IR_RECEIVER: Press time:   7569 ms[0m
+[0;32mI (8193) IR_RECEIVER: Release time: 7929 ms[0m
+[0;32mI (8193) IR_RECEIVER: Held duration: 359 ms[0m
+[0;32mI (9063) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (9133) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (9133) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (9133) IR_RECEIVER: Mute button received[0m
+[0;32mI (9133) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (9163) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (9183) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (9493) IR_RECEIVER: Mute button released[0m
+[0;32mI (9493) IR_RECEIVER: Press time:   8869 ms[0m
+[0;32mI (9493) IR_RECEIVER: Release time: 9229 ms[0m
+[0;32mI (9493) IR_RECEIVER: Held duration: 359 ms[0m
+[0;32mI (10123) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (10193) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (10193) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (10193) IR_RECEIVER: Mute button received[0m
+[0;32mI (10193) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (10233) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (10243) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (10593) IR_RECEIVER: Mute button released[0m
+[0;32mI (10593) IR_RECEIVER: Press time:   9929 ms[0m
+[0;32mI (10593) IR_RECEIVER: Release time: 10329 ms[0m
+[0;32mI (10593) IR_RECEIVER: Held duration: 399 ms[0m
+[0;32mI (11563) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (11633) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (11633) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (11633) IR_RECEIVER: Mute button received[0m
+[0;32mI (11633) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (11673) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (11683) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (11783) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (11793) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (11883) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (11903) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (11993) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (11993) IR_RECEIVER: Mute button released[0m
+[0;32mI (11993) IR_RECEIVER: Press time:   11369 ms[0m
+[0;32mI (11993) IR_RECEIVER: Release time: 11729 ms[0m
+[0;32mI (11993) IR_RECEIVER: Held duration: 359 ms[0m
+[0;32mI (12003) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (12103) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (12113) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (12213) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (12223) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (12323) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (12333) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (12423) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (12443) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (12533) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (12543) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (12643) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (12713) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (12713) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (12713) IR_RECEIVER: Mute button received[0m
+[0;32mI (12713) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (13103) IR_RECEIVER: Mute button released[0m
+[0;32mI (13103) IR_RECEIVER: Press time:   12449 ms[0m
+[0;32mI (13103) IR_RECEIVER: Release time: 12839 ms[0m
+[0;32mI (13103) IR_RECEIVER: Held duration: 389 ms[0m
+[0;32mI (13373) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (13443) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (13443) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (13443) IR_RECEIVER: Mute button received[0m
+[0;32mI (13443) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (13573) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (13643) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (13643) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (13643) IR_RECEIVER: Mute button received[0m
+[0;32mI (13683) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (13693) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (14003) IR_RECEIVER: Mute button released[0m
+[0;32mI (14003) IR_RECEIVER: Press time:   13179 ms[0m
+[0;32mI (14003) IR_RECEIVER: Release time: 13739 ms[0m
+[0;32mI (14003) IR_RECEIVER: Held duration: 559 ms[0m
+[0;32mI (15093) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (15163) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (15163) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (15163) IR_RECEIVER: Mute button received[0m
+[0;32mI (15163) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (15203) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (15213) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (15323) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (15393) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (15393) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (15393) IR_RECEIVER: Mute button received[0m
+[0;32mI (15433) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (15443) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (15613) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (15673) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (15673) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (15673) IR_RECEIVER: Mute button received[0m
+[0;32mI (15713) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (15733) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (16003) IR_RECEIVER: Mute button released[0m
+[0;32mI (16003) IR_RECEIVER: Press time:   14899 ms[0m
+[0;32mI (16003) IR_RECEIVER: Release time: 15739 ms[0m
+[0;32mI (16003) IR_RECEIVER: Held duration: 839 ms[0m
+[0;32mI (16893) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (16963) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (16963) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (16963) IR_RECEIVER: Mute button received[0m
+[0;32mI (16963) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (17003) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (17013) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (17143) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (17213) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (17213) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (17213) IR_RECEIVER: Mute button received[0m
+[0;32mI (17253) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (17263) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (17573) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (17603) IR_RECEIVER: Mute button released[0m
+[0;32mI (17603) IR_RECEIVER: Press time:   16699 ms[0m
+[0;32mI (17603) IR_RECEIVER: Release time: 17339 ms[0m
+[0;32mI (17603) IR_RECEIVER: Held duration: 639 ms[0m
+[0;32mI (17643) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (17643) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (17643) IR_RECEIVER: Mute button received[0m
+[0;32mI (17643) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (17683) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (17693) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (17823) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (17893) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (17893) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (17893) IR_RECEIVER: Mute button received[0m
+[0;32mI (17933) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (17943) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (18203) IR_RECEIVER: Mute button released[0m
+[0;32mI (18203) IR_RECEIVER: Press time:   17379 ms[0m
+[0;32mI (18203) IR_RECEIVER: Release time: 17939 ms[0m
+[0;32mI (18203) IR_RECEIVER: Held duration: 559 ms[0m
+[0;32mI (18973) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (19033) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (19033) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (19033) IR_RECEIVER: Mute button received[0m
+[0;32mI (19033) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (19073) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (19093) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (19203) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (19273) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (19273) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (19273) IR_RECEIVER: Mute button received[0m
+[0;32mI (19313) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (19323) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (19603) IR_RECEIVER: Mute button released[0m
+[0;32mI (19603) IR_RECEIVER: Press time:   18770 ms[0m
+[0;32mI (19603) IR_RECEIVER: Release time: 19339 ms[0m
+[0;32mI (19603) IR_RECEIVER: Held duration: 568 ms[0m
+[0;32mI (20613) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (20683) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (20683) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (20683) IR_RECEIVER: Mute button received[0m
+[0;32mI (20683) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (20723) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (20733) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (20833) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (20843) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (20943) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (20953) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21003) IR_RECEIVER: Mute button released[0m
+[0;32mI (21003) IR_RECEIVER: Press time:   20419 ms[0m
+[0;32mI (21003) IR_RECEIVER: Release time: 20739 ms[0m
+[0;32mI (21003) IR_RECEIVER: Held duration: 319 ms[0m
+[0;32mI (21043) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21063) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21153) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21163) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21263) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21273) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21373) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21383) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21483) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21493) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21583) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21603) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21693) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21703) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21803) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21813) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (21913) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (21923) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (22483) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (22553) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (22553) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (22553) IR_RECEIVER: Mute button received[0m
+[0;32mI (22553) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (22593) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (22603) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (22703) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (22713) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (22903) IR_RECEIVER: Mute button released[0m
+[0;32mI (22903) IR_RECEIVER: Press time:   22289 ms[0m
+[0;32mI (22903) IR_RECEIVER: Release time: 22639 ms[0m
+[0;32mI (22903) IR_RECEIVER: Held duration: 349 ms[0m
+[0;32mI (23853) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (23923) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (23923) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (23923) IR_RECEIVER: Mute button received[0m
+[0;32mI (23923) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (23963) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (23973) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (24303) IR_RECEIVER: Mute button released[0m
+[0;32mI (24303) IR_RECEIVER: Press time:   23659 ms[0m
+[0;32mI (24303) IR_RECEIVER: Release time: 24039 ms[0m
+[0;32mI (24303) IR_RECEIVER: Held duration: 379 ms[0m

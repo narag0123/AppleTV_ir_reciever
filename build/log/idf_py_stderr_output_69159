@@ -1,0 +1,136 @@
+Command: /Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-540 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader.elf -m '/Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbserial-540 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+[0m
+[0;33m--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008184d: panic_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/panic.c:468
+--- 0x400856e9: esp_system_abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b441: abort at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x400856df: _esp_error_check_failed at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d683b: app_main at /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main/main.c:89 (discriminator 1)
+--- 0x400e441d: main_task at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085edd: vPortTaskWrapper at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/jude/LocalStorage/SDK/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

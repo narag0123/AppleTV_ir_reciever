@@ -1,0 +1,82 @@
+Command: /Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-540 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader.elf -m '/Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3234-gdc678decf7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 24 2025 09:23:47[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af58h ( 44888) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001af80 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001afa4 vaddr=3ffb0000 size=02344h (  9028) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001d2f0 vaddr=40080000 size=02d28h ( 11560) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15c78h ( 89208) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035ca0 vaddr=40082d28 size=0a574h ( 42356) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (197) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (197) app_init: Application information:[0m
+[0;32mI (197) app_init: Project name:     ir_reciever[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Apr 24 2025 14:20:52[0m
+[0;32mI (209) app_init: ELF file SHA256:  524a0c323...[0m
+[0;32mI (214) app_init: ESP-IDF:          v5.5-dev-3234-gdc678decf7-dirty[0m
+[0;32mI (220) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (232) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFB2E30 len 0002D1D0 (180 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 4008D29C len 00012D64 (75 KiB): IRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+
+[IR_LOGGER] '볼륨 다운' 해시 수집 시작
+[0;32mI (294) IR_APP: IR 감지 시작[0m
+[0;32mI (2744) IR_APP: 0x00003C4C[0m
+[0;32mI (2794) IR_APP: 0x000008D0[0m
+[0;32mI (3724) IR_APP: 0x00003F33[0m
+[0;32mI (3774) IR_APP: 0x00000849[0m
+[0;32mI (4244) IR_APP: 0x00003CF2[0m
+[0;32mI (4294) IR_APP: 0x00000BB5[0m
+[0;32mI (4784) IR_APP: 0x00003F73[0m
+[0;32mI (4834) IR_APP: 0x0000080C[0m
+[0;32mI (5714) IR_APP: 0x00003FC5[0m
+[0;32mI (5764) IR_APP: 0x0000084E[0m
+[0;32mI (6194) IR_APP: 0x00003F69[0m
+[0;32mI (6244) IR_APP: 0x0000082A[0m
+[0;32mI (6874) IR_APP: 0x00003FBD[0m
+[0;32mI (6924) IR_APP: 0x00000B4B[0m
+[0;32mI (7094) IR_APP: 0x00003F55[0m
+[0;32mI (7144) IR_APP: 0x000009E4[0m
+[0;32mI (7694) IR_APP: 0x00003CC8[0m
+[0;32mI (7884) IR_APP: 0x00003F44[0m
+[0;32mI (8404) IR_APP: 0x00003E79[0m
+[0;32mI (8454) IR_APP: 0x00000834[0m
+[0;32mI (8604) IR_APP: 0x00003F47[0m
+[0;32mI (8654) IR_APP: 0x00000967[0m
