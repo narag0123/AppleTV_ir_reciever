@@ -2250,7 +2250,7 @@
 				{
 					"directoryIndex" : 16,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-Debug-c7218efd7ae873735fe1.json",
+					"jsonFile" : "target-__idf_esp_app_format-Debug-499da63363723b92b980.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -2628,7 +2628,7 @@
 				{
 					"directoryIndex" : 118,
 					"id" : "__idf_main::@7368607ed66887415643",
-					"jsonFile" : "target-__idf_main-Debug-cd490aa06ff94d7c63bd.json",
+					"jsonFile" : "target-__idf_main-Debug-1cb6326eae548231159f.json",
 					"name" : "__idf_main",
 					"projectIndex" : 1
 				},
@@ -2943,7 +2943,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ir_reciever.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ir_reciever.elf-Debug-28378ecd893fcda66657.json",
+					"jsonFile" : "target-ir_reciever.elf-Debug-bdb3c3262771fc04bf18.json",
 					"name" : "ir_reciever.elf",
 					"projectIndex" : 0
 				},

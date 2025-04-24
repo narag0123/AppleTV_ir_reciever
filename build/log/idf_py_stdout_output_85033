@@ -1,0 +1,104 @@
+Command: /Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-540 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever 2.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader 2.elf /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader.elf -m '/Users/jude/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3234-gdc678decf7-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 24 2025 19:23:09[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ac50h ( 44112) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ac78 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001ac9c vaddr=3ffb0000 size=02324h (  8996) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001cfc8 vaddr=40080000 size=03050h ( 12368) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15bd8h ( 89048) map[0m
+[0;32mI (155) esp_image: segment 5: paddr=00035c00 vaddr=40083050 size=0a24ch ( 41548) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     ir_reciever[0m
+[0;32mI (201) app_init: App version:      622855c-dirty[0m
+[0;32mI (205) app_init: Compile time:     Apr 25 2025 01:25:02[0m
+[0;32mI (210) app_init: ELF file SHA256:  8ba63df37...[0m
+[0;32mI (214) app_init: ESP-IDF:          v5.5-dev-3234-gdc678decf7-dirty[0m
+[0;32mI (220) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (224) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (228) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (232) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (239) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FFB2E18 len 0002D1E8 (180 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 4008D29C len 00012D64 (75 KiB): IRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (269) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+[0;32mI (294) MAIN: Starting application...[0m
+[0;32mI (294) IR_RECEIVER: IR Receiver started on GPIO 32[0m
+[0;32mI (294) main_task: Returned from app_main()[0m
+[0;32mI (6194) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6264) IR_RECEIVER: Raw IR signal received. Length = 34 symbols[0m
+[0;32mI (6264) IR_RECEIVER: Decoded data: 0xF609FB04[0m
+[0;32mI (6264) IR_RECEIVER: Mute button received[0m
+[0;32mI (6264) IR_RECEIVER: Mute button pressed[0m
+[0;32mI (6304) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6314) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6404) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6414) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6514) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6524) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6624) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6634) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6734) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6744) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6844) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6854) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (6944) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (6954) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7054) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7064) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7164) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7174) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7274) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7284) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7374) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7394) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7484) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7494) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7594) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7604) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7704) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7714) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7814) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7824) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (7914) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (7934) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (8024) IR_RECEIVER: Raw IR signal received. Length = 1 symbols[0m
+[0;32mI (8034) IR_RECEIVER: Raw IR signal received. Length = 2 symbols[0m
+[0;32mI (9094) IR_RECEIVER: Mute button released[0m
+[0;32mI (9094) IR_RECEIVER: Held count: 35[0m
+[0;32mI (9094) IR_RECEIVER: Estimated held duration: 3.50 seconds[0m
+[1;31mE (11094) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[1;31mE (14094) gpio: gpio_set_level(238): GPIO output gpio_num error[0m

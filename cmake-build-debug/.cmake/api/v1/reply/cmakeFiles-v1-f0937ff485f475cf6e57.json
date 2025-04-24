@@ -302,6 +302,20 @@
 			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake"
 		},
 		{
+			"path" : ".git/HEAD"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/cmake/third_party/GetGitRevisionDescription.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/git-data/grabRef.cmake"
+		},
+		{
+			"path" : ".git/refs/heads/main"
+		},
+		{
 			"isExternal" : true,
 			"path" : "/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/kconfig_new/config.env.in"
 		},
