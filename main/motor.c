@@ -9,6 +9,7 @@
 
 #define MOTOR_GPIO 25
 #define TAG "MOTOR"
+#define ANGLE 45
 
 uint32_t angle_to_duty(int angle_deg) {
     int us = 500 + (angle_deg * 2000 / 180);
@@ -37,17 +38,17 @@ void motor_init(void) {
 }
 
 static void motor_task(void *arg) {
-    ESP_LOGI(TAG, "motor_start - rotate to %d°\n", angle_to_duty(45));
+    ESP_LOGI(TAG, "motor_start - rotate to %d°\n", ANGLE);
 
-    ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, angle_to_duty(45));  // 180°
+    ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, angle_to_duty(ANGLE));  // 180°
     ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
-    vTaskDelay(pdMS_TO_TICKS(1000));
+    vTaskDelay(pdMS_TO_TICKS(300));
 
     ESP_LOGI(TAG, "motor_return - rotate back to 0°");
 
     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, angle_to_duty(0));  // 0°
     ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
-    vTaskDelay(pdMS_TO_TICKS(1000));
+    vTaskDelay(pdMS_TO_TICKS(300));
 
     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 0);
     ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);

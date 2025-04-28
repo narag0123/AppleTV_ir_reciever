@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("/Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/esp-idf/mbedtls/install_local_manifest.txt"
+  file(WRITE "/Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/build/esp-idf/mbedtls/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

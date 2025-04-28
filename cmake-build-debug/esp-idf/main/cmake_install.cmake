@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/main
+# Install script for directory: /Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Users/jude/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 

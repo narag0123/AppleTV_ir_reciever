@@ -1,2 +1,2 @@
-source /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/gdbinit/symbols
-source /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/gdbinit/connect
+source /Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/build/bootloader/gdbinit/symbols
+source /Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/build/bootloader/gdbinit/connect

@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/bootloader/bootloader.elf
+    add-symbol-file /Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build/ir_reciever.elf
+file /Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/build/ir_reciever.elf

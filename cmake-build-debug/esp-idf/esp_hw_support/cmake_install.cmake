@@ -34,16 +34,16 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Users/jude/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/cmake-build-debug/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
+  include("/Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/cmake-build-debug/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/cmake-build-debug/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("/Users/jude/LocalStorage/Embedded Project/Acton Activator/firmware/ir_reciever/cmake-build-debug/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 
