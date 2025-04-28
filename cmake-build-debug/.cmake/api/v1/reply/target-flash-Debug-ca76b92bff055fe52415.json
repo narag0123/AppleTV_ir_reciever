@@ -1,10 +1,12 @@
 {
-	"backtrace" : 6,
+	"backtrace" : 8,
 	"backtraceGraph" : 
 	{
 		"commands" : 
 		[
 			"add_custom_target",
+			"esptool_py_flash_target",
+			"esptool_py_custom_target",
 			"include",
 			"__build_process_project_includes",
 			"idf_build_process",
@@ -16,8 +18,7 @@
 			"/Users/jude/LocalStorage/SDK/esp/esp-idf/components/esptool_py/project_include.cmake",
 			"/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/cmake/build.cmake",
 			"/Users/jude/LocalStorage/SDK/esp/esp-idf/tools/cmake/project.cmake",
-			"CMakeLists.txt",
-			"/Users/jude/LocalStorage/SDK/esp/esp-idf/components/esptool_py/CMakeLists.txt"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -25,25 +26,25 @@
 				"file" : 3
 			},
 			{
-				"command" : 4,
+				"command" : 6,
 				"file" : 3,
 				"line" : 4,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 5,
 				"file" : 2,
 				"line" : 736,
 				"parent" : 1
 			},
 			{
-				"command" : 2,
+				"command" : 4,
 				"file" : 1,
 				"line" : 701,
 				"parent" : 2
 			},
 			{
-				"command" : 1,
+				"command" : 3,
 				"file" : 1,
 				"line" : 467,
 				"parent" : 3
@@ -53,34 +54,48 @@
 				"parent" : 4
 			},
 			{
-				"command" : 0,
+				"command" : 2,
 				"file" : 0,
-				"line" : 146,
+				"line" : 547,
 				"parent" : 5
 			},
 			{
-				"file" : 4
+				"command" : 1,
+				"file" : 0,
+				"line" : 516,
+				"parent" : 6
 			},
 			{
-				"command" : 5,
-				"file" : 4,
-				"line" : 69,
+				"command" : 0,
+				"file" : 0,
+				"line" : 404,
 				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 522,
+				"parent" : 6
 			}
 		]
 	},
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 8,
-			"id" : "app_check_size::@bf8f55be585a12323665"
+			"backtrace" : 9,
+			"id" : "bootloader::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "gen_project_binary::@6890427a1f51a3e7e1df"
+			"backtrace" : 9,
+			"id" : "app::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "partition_table_bin::@8e7a60ee4fe55e1aaabf"
 		}
 	],
-	"id" : "app::@6890427a1f51a3e7e1df",
-	"name" : "app",
+	"id" : "flash::@6890427a1f51a3e7e1df",
+	"name" : "flash",
 	"paths" : 
 	{
 		"build" : ".",
@@ -106,15 +121,15 @@
 	"sources" : 
 	[
 		{
-			"backtrace" : 6,
+			"backtrace" : 8,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/app",
+			"path" : "cmake-build-debug/CMakeFiles/flash",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/app.rule",
+			"path" : "cmake-build-debug/CMakeFiles/flash.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

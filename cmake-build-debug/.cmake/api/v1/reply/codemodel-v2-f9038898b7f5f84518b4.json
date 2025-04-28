@@ -2250,7 +2250,7 @@
 				{
 					"directoryIndex" : 16,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-Debug-e85c50d2ed365a2acf1f.json",
+					"jsonFile" : "target-__idf_esp_app_format-Debug-5ec6c367bbe3136e5a22.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -2474,7 +2474,7 @@
 				{
 					"directoryIndex" : 102,
 					"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef",
-					"jsonFile" : "target-__idf_esp_local_ctrl-Debug-3f4316c46995044f5673.json",
+					"jsonFile" : "target-__idf_esp_local_ctrl-Debug-f1e3b708f3dd893bb6f0.json",
 					"name" : "__idf_esp_local_ctrl",
 					"projectIndex" : 1
 				},
@@ -2572,7 +2572,7 @@
 				{
 					"directoryIndex" : 105,
 					"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7",
-					"jsonFile" : "target-__idf_fatfs-Debug-68022b20327a89f06dd1.json",
+					"jsonFile" : "target-__idf_fatfs-Debug-962eee519f4b32712a86.json",
 					"name" : "__idf_fatfs",
 					"projectIndex" : 1
 				},
@@ -2628,7 +2628,7 @@
 				{
 					"directoryIndex" : 118,
 					"id" : "__idf_main::@7368607ed66887415643",
-					"jsonFile" : "target-__idf_main-Debug-066a43952fa9ef2b2e42.json",
+					"jsonFile" : "target-__idf_main-Debug-d857af4d6a7807fb8e1a.json",
 					"name" : "__idf_main",
 					"projectIndex" : 1
 				},
@@ -2684,7 +2684,7 @@
 				{
 					"directoryIndex" : 101,
 					"id" : "__idf_protocomm::@d76d01c8dec06205e1fc",
-					"jsonFile" : "target-__idf_protocomm-Debug-662600c814c6f43c7b53.json",
+					"jsonFile" : "target-__idf_protocomm-Debug-135886f244762aa17aa8.json",
 					"name" : "__idf_protocomm",
 					"projectIndex" : 1
 				},
@@ -2761,7 +2761,7 @@
 				{
 					"directoryIndex" : 117,
 					"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098",
-					"jsonFile" : "target-__idf_wifi_provisioning-Debug-22f05a08e1483f251d7d.json",
+					"jsonFile" : "target-__idf_wifi_provisioning-Debug-90536be5d8aae779dee3.json",
 					"name" : "__idf_wifi_provisioning",
 					"projectIndex" : 1
 				},
@@ -2782,7 +2782,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-__ldgen_output_sections.ld-Debug-100ba7ba90c8786e0a91.json",
+					"jsonFile" : "target-__ldgen_output_sections.ld-Debug-3f8990b23f9f89ebe521.json",
 					"name" : "__ldgen_output_sections.ld",
 					"projectIndex" : 0
 				},
@@ -2803,7 +2803,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "app::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-app-Debug-7d106807402cbf2556b5.json",
+					"jsonFile" : "target-app-Debug-d59bc92b22085d6a0eb8.json",
 					"name" : "app",
 					"projectIndex" : 0
 				},
@@ -2817,7 +2817,7 @@
 				{
 					"directoryIndex" : 14,
 					"id" : "app_check_size::@bf8f55be585a12323665",
-					"jsonFile" : "target-app_check_size-Debug-a35ee243111aaf24df4a.json",
+					"jsonFile" : "target-app_check_size-Debug-383e013b1891c7d18a0f.json",
 					"name" : "app_check_size",
 					"projectIndex" : 1
 				},
@@ -2929,7 +2929,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "flash::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-flash-Debug-93ebf0d4884ab2846853.json",
+					"jsonFile" : "target-flash-Debug-ca76b92bff055fe52415.json",
 					"name" : "flash",
 					"projectIndex" : 0
 				},
@@ -2943,7 +2943,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ir_reciever.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ir_reciever.elf-Debug-179357215aa7aaffa948.json",
+					"jsonFile" : "target-ir_reciever.elf-Debug-8393863b7c0fa1400292.json",
 					"name" : "ir_reciever.elf",
 					"projectIndex" : 0
 				},

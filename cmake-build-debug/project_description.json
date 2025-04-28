@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "ir_reciever",
-    "project_version":    "ad5f344-dirty",
+    "project_version":    "d4d8d4e-dirty",
     "project_path":       "/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever",
     "idf_path":           "/Users/jude/LocalStorage/SDK/esp/esp-idf",
     "build_dir":          "/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/cmake-build-debug",

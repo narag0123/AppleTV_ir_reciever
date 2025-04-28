@@ -1920,48 +1920,20 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 9,
-			"id" : "__idf_xtensa::@1daaaad7abe597e030f9"
+			"backtrace" : 71,
+			"id" : "__idf_esp_driver_touch_sens::@834ec88eeea238586f95"
 		},
 		{
-			"backtrace" : 89,
-			"id" : "__idf_nvs_sec_provider::@06580cba064af97f59fd"
+			"backtrace" : 72,
+			"id" : "__idf_esp_driver_twai::@0c7b27fa84c4efa2b2b9"
 		},
 		{
-			"backtrace" : 90,
-			"id" : "__idf_perfmon::@aac0f647c32bb8f54a67"
+			"backtrace" : 73,
+			"id" : "__idf_esp_eth::@68140d310044213ed0bc"
 		},
 		{
-			"backtrace" : 91,
-			"id" : "__idf_rt::@c044be52929cb104e3c1"
-		},
-		{
-			"backtrace" : 92,
-			"id" : "__idf_spiffs::@df881b71474064c86689"
-		},
-		{
-			"backtrace" : 93,
-			"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098"
-		},
-		{
-			"backtrace" : 94,
-			"id" : "__idf_main::@7368607ed66887415643"
-		},
-		{
-			"backtrace" : 40,
-			"id" : "__idf_app_trace::@dd7eb3aa23293586d3b8"
-		},
-		{
-			"backtrace" : 51,
-			"id" : "__idf_unity::@fec746937506b5690992"
-		},
-		{
-			"backtrace" : 52,
-			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
-		},
-		{
-			"backtrace" : 53,
-			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+			"backtrace" : 74,
+			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
 		},
 		{
 			"backtrace" : 79,
@@ -2004,6 +1976,30 @@
 			"id" : "__idf_mqtt::@c1ab2c6a99226d1f4b56"
 		},
 		{
+			"backtrace" : 89,
+			"id" : "__idf_nvs_sec_provider::@06580cba064af97f59fd"
+		},
+		{
+			"backtrace" : 90,
+			"id" : "__idf_perfmon::@aac0f647c32bb8f54a67"
+		},
+		{
+			"backtrace" : 91,
+			"id" : "__idf_rt::@c044be52929cb104e3c1"
+		},
+		{
+			"backtrace" : 92,
+			"id" : "__idf_spiffs::@df881b71474064c86689"
+		},
+		{
+			"backtrace" : 93,
+			"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098"
+		},
+		{
+			"backtrace" : 94,
+			"id" : "__idf_main::@7368607ed66887415643"
+		},
+		{
 			"backtrace" : 191,
 			"id" : "_project_elf_src::@6890427a1f51a3e7e1df"
 		},
@@ -2012,24 +2008,28 @@
 			"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df"
 		},
 		{
+			"backtrace" : 9,
+			"id" : "__idf_xtensa::@1daaaad7abe597e030f9"
+		},
+		{
+			"backtrace" : 40,
+			"id" : "__idf_app_trace::@dd7eb3aa23293586d3b8"
+		},
+		{
+			"backtrace" : 51,
+			"id" : "__idf_unity::@fec746937506b5690992"
+		},
+		{
+			"backtrace" : 52,
+			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
+		},
+		{
+			"backtrace" : 53,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
 			"backtrace" : 70,
 			"id" : "__idf_esp_driver_cam::@d005630ea6316acc7c7d"
-		},
-		{
-			"backtrace" : 71,
-			"id" : "__idf_esp_driver_touch_sens::@834ec88eeea238586f95"
-		},
-		{
-			"backtrace" : 72,
-			"id" : "__idf_esp_driver_twai::@0c7b27fa84c4efa2b2b9"
-		},
-		{
-			"backtrace" : 73,
-			"id" : "__idf_esp_eth::@68140d310044213ed0bc"
-		},
-		{
-			"backtrace" : 74,
-			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
 		}
 	],
 	"id" : "ir_reciever.elf::@6890427a1f51a3e7e1df",
