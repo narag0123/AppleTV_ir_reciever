@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "ir_reciever",
-    "project_version":    "622855c-dirty",
+    "project_version":    "ad5f344-dirty",
     "project_path":       "/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever",
     "idf_path":           "/Users/jude/LocalStorage/SDK/esp/esp-idf",
     "build_dir":          "/Users/jude/Documents/Embedded Project/Acton Activator/ir_reciever/build",

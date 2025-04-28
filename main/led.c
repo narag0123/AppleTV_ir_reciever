@@ -19,8 +19,13 @@ void led_init(void) {
     ESP_LOGI(TAG, "LED GPIO %d initialized", LED_GPIO);
 }
 
-void led_blink(int ms) {
+static void led_task(void *arg) {
     gpio_set_level(LED_GPIO, 1);
-    vTaskDelay(pdMS_TO_TICKS(ms));
+    vTaskDelay(pdMS_TO_TICKS(2000));
     gpio_set_level(LED_GPIO, 0);
+    vTaskDelete(NULL);
+}
+
+void led_blink() {
+    xTaskCreate(led_task, "led_task", 1024, NULL, 5, NULL);
 }

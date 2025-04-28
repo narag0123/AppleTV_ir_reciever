@@ -93,7 +93,7 @@ static void mute_watchdog_task(void *arg) {
 
                 if (estimated_time >= 3.0f) {
 
-                    led_blink(2000); // led 동작
+                    // led_blink(); // led 동작
                     motor_start(); // 모터동작
                 }
 

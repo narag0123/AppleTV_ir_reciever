@@ -2250,7 +2250,7 @@
 				{
 					"directoryIndex" : 16,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-Debug-499da63363723b92b980.json",
+					"jsonFile" : "target-__idf_esp_app_format-Debug-e85c50d2ed365a2acf1f.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -2628,7 +2628,7 @@
 				{
 					"directoryIndex" : 118,
 					"id" : "__idf_main::@7368607ed66887415643",
-					"jsonFile" : "target-__idf_main-Debug-1cb6326eae548231159f.json",
+					"jsonFile" : "target-__idf_main-Debug-066a43952fa9ef2b2e42.json",
 					"name" : "__idf_main",
 					"projectIndex" : 1
 				},
@@ -2782,7 +2782,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-__ldgen_output_sections.ld-Debug-12b5a0cd7926db96e7af.json",
+					"jsonFile" : "target-__ldgen_output_sections.ld-Debug-100ba7ba90c8786e0a91.json",
 					"name" : "__ldgen_output_sections.ld",
 					"projectIndex" : 0
 				},
@@ -2803,7 +2803,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "app::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-app-Debug-d59bc92b22085d6a0eb8.json",
+					"jsonFile" : "target-app-Debug-7d106807402cbf2556b5.json",
 					"name" : "app",
 					"projectIndex" : 0
 				},
@@ -2817,7 +2817,7 @@
 				{
 					"directoryIndex" : 14,
 					"id" : "app_check_size::@bf8f55be585a12323665",
-					"jsonFile" : "target-app_check_size-Debug-383e013b1891c7d18a0f.json",
+					"jsonFile" : "target-app_check_size-Debug-a35ee243111aaf24df4a.json",
 					"name" : "app_check_size",
 					"projectIndex" : 1
 				},
@@ -2929,7 +2929,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "flash::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-flash-Debug-ca76b92bff055fe52415.json",
+					"jsonFile" : "target-flash-Debug-93ebf0d4884ab2846853.json",
 					"name" : "flash",
 					"projectIndex" : 0
 				},
@@ -2943,7 +2943,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ir_reciever.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ir_reciever.elf-Debug-bdb3c3262771fc04bf18.json",
+					"jsonFile" : "target-ir_reciever.elf-Debug-179357215aa7aaffa948.json",
 					"name" : "ir_reciever.elf",
 					"projectIndex" : 0
 				},

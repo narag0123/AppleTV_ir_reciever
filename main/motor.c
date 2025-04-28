@@ -10,6 +10,11 @@
 #define MOTOR_GPIO 25
 #define TAG "MOTOR"
 
+uint32_t angle_to_duty(int angle_deg) {
+    int us = 500 + (angle_deg * 2000 / 180);
+    return (uint32_t)((us / 20000.0) * 65536);
+}
+
 void motor_init(void) {
     ledc_timer_config_t timer_conf = {
         .duty_resolution = LEDC_TIMER_16_BIT,
@@ -31,22 +36,25 @@ void motor_init(void) {
     ledc_channel_config(&channel_conf);
 }
 
-void motor_start(void) {
-    ESP_LOGI(TAG, "motor_start - rotate to 180°");
+static void motor_task(void *arg) {
+    ESP_LOGI(TAG, "motor_start - rotate to %d°\n", angle_to_duty(45));
 
-    // 180도 (약 2500us)
-    ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 8191);  // (2500 / 20000) * 65536 ≈ 8191
+    ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, angle_to_duty(45));  // 180°
     ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
-    vTaskDelay(pdMS_TO_TICKS(1000));  // 1초 대기
+    vTaskDelay(pdMS_TO_TICKS(1000));
 
     ESP_LOGI(TAG, "motor_return - rotate back to 0°");
 
-    // 0도 (약 500us)
-    ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 1638);  // (500 / 20000) * 65536 ≈ 1638
+    ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, angle_to_duty(0));  // 0°
     ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
-    vTaskDelay(pdMS_TO_TICKS(1000));  // 복귀 대기
+    vTaskDelay(pdMS_TO_TICKS(1000));
 
-    // 펄스를 중단해서 전류 차단 (옵션)
     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 0);
     ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
+
+    vTaskDelete(NULL);  // 태스크 종료
+}
+
+void motor_start(void) {
+    xTaskCreate(motor_task, "motor_task", 2048, NULL, 5, NULL);
 }
